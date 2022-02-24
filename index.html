@@ -5,8 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ポートフォリオ</title>
+    <meta name="description" content="ポートフォリオサイトです。" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- <link rel="shortcut icon" href="/img/favicon.ico" /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/loading.js"></script>
   </head>
   <body>
-    <h1>ポートフォリオです</h1>
+    <!-- ローディングアニメーション -->
+    <div class="loading">
+      <!-- プログレスバー -->
+      <!-- <ul class="progress">
+        <li id="progress-header">
+          <div class="circle-border"><div class="circle-core"></div></div>
+          Header
+        </li>
+        <li id="progress-main">
+          <div class="circle-border"><div class="circle-core"></div></div>
+          Main
+        </li>
+        <li id="progress-sidebar">
+          <div class="circle-border"><div class="circle-core"></div></div>
+          Sidebar
+        </li>
+        <li id="progress-footer">
+          <div class="circle-border"><div class="circle-core"></div></div>
+          footer
+        </li>
+      </ul> -->
+      <!-- 進行状況案内 -->
+      <div class="info-progress">
+        <div class="circle-border"><div class="circle-core"></div></div>
+        読み込み中...
+      </div>
+    </div>
+    <!-- メインコンテンツ -->
+    <div class="contents">
+      <header id="header" class="wrapper">
+        <h1>ポートフォリオサイト</h1>
+        <nav>
+          <ul>
+            <li><a href="#create">制作物</a></li>
+            <li><a href="#profile">自己紹介</a></li>
+            <li><a href="#gallery">ギャラリー</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container wrapper">
+        <main id="main">
+          <!-- <div id="mainvisual">
+            <img src="/img/mainvisual.jpg" />
+          </div> -->
+          <section id="create">
+            <h2>制作物</h2>
+            <p>
+              <a href="/timer/index.html"
+                ><img
+                  src="/img/timer_sample.png"
+                /><br />JQueryを使ったタイマー</a
+              >
+            </p>
+          </section>
+          <section id="profile">
+            <h2>自己紹介</h2>
+          </section>
+          <section id="gallery">
+            <h2>ギャラリー</h2>
+          </section>
+        </main>
+        <aside id="sidebar">
+          <div>
+            <!-- <img src="/img/profile.png" /> -->
+            <h3>プロフィール</h3>
+            <span>コーディング歴</span>
+            <dl>
+              <dt>HTML, CSSコーディング歴</dt>
+              <dd>1年</dd>
+              <dt>Javascriptコーディング歴</dt>
+              <dd>3年</dd>
+              <dt>PHPコーディング歴</dt>
+              <dd>3年</dd>
+              <dt>JAVAコーディング歴</dt>
+              <dd>4年</dd>
+              <dt>Androidコーディング歴</dt>
+              <dd>2年</dd>
+              <dt>GASコーディング歴</dt>
+              <dd>1年</dd>
+            </dl>
+          </div>
+        </aside>
+      </div>
+      <footer id="footer">
+        <div class="wrapper">
+          <ul>
+            <li><a href="#create">制作物</a></li>
+            <li><a href="#profile">自己紹介</a></li>
+            <li><a href="#gallery">ギャラリー</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
