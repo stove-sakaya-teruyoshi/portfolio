@@ -1,0 +1,265 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+    "Meiryo" sans-serif;
+  font-size: 0.9rem;
+}
+
+img {
+  width: 100%;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 5%;
+  max-width: 1200px;
+}
+
+/* 章見出し */
+.section-title {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+/* テキスト */
+.text-white {
+  color: #ffffff;
+}
+.text-center {
+  text-align: center;
+}
+
+/** 
+  メインビジュアル
+*/
+#header {
+  margin-bottom: 70px;
+}
+
+#mainvisual {
+  position: relative;
+}
+
+.img-mainvisual {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+#mainvisual h1 {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+/**
+  案内
+*/
+#info {
+  margin-bottom: 40px;
+}
+
+/**
+  Archive, New を並べる
+*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+#archive,
+#new {
+  margin-bottom: 30px;
+  width: 49%;
+}
+
+#archive .section-title,
+#new .section-title {
+  margin-bottom: 0;
+  padding: 5px 0;
+}
+
+#archive a,
+#new a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-shadow {
+  position: absolute;
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/**
+  ファッション＆スタイル
+*/
+#fashion-and-style {
+  padding-top: 80px;
+  margin-bottom: 70px;
+  width: 100%;
+  height: 480px;
+  background-repeat: no-repeat;
+  background-image: url("../img/fashion.jpg");
+  background-size: 100% 100%;
+}
+
+.button {
+  display: inline-block;
+  margin: 0 auto;
+  border: 1px solid #010101;
+  margin: 20px 0;
+  padding: 10px 35px;
+}
+
+/**
+  カタログ、アンティーク
+*/
+.back-gray {
+  background-color: #efefef;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#catalog,
+#antique {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#antique {
+  flex-direction: row-reverse;
+}
+
+#catalog > img,
+#catalog > div,
+#antique > img,
+#antique > div {
+  width: 48%;
+}
+
+#catalog p,
+#antique p {
+  margin-bottom: 30px;
+}
+
+#catalog p:last-child {
+  margin-bottom: 0;
+}
+
+/**
+  フッター
+*/
+#footer {
+  font-size: 0.8rem;
+}
+
+.flex-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.flex-footer > * {
+  width: 30%;
+}
+
+.flex-footer > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flex-footer > div:first-child {
+  align-items: center;
+}
+
+.flex-footer div a {
+  display: block;
+}
+
+.flex-footer img {
+  width: auto;
+}
+
+.back-black {
+  padding: 100px 0;
+  color: #ffffff;
+  background-color: #010101;
+}
+
+#footer h3 {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+  font-weight: bold;
+}
+
+#footer ul {
+  list-style: "-";
+  list-style-position: inside;
+}
+
+#footer ul li {
+  margin-bottom: 5px;
+}
+
+#footer ul li:last-child {
+  margin-bottom: 0;
+}
+
+#footer .copyright {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 896px) {
+  #archive,
+  #new {
+    width: 100%;
+  }
+
+  #catalog {
+    flex-direction: column;
+  }
+
+  #antique {
+    flex-direction: column-reverse;
+  }
+
+  #catalog > img,
+  #catalog > div,
+  #antique > img,
+  #antique > div {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .back-black {
+    padding: 50px 0;
+  }
+
+  .flex-footer > * {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}

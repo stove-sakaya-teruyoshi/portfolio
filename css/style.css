@@ -157,6 +157,60 @@ img {
 }
 
 /**
+  制作物
+*/
+#create .flex-create {
+  display: flex;
+  margin-top: 50px;
+  width: 100%;
+}
+
+#create .chooser {
+  cursor: default;
+  width: 30%;
+}
+
+#create .chooser li {
+  display: flex;
+  flex-direction: column;
+  margin: 0.75rem 0;
+  width: 100%;
+}
+
+#create .chooser li:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #0000ff;
+  transition: width 0.4s;
+}
+
+#create .chooser li.active:after {
+  width: 90%;
+}
+
+#create .slider {
+  position: relative;
+  width: 70%;
+}
+
+#create .slider li {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+#create .slider li.active {
+  display: block;
+}
+
+#create .slider li img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/**
   サイドバー
 */
 #sidebar {

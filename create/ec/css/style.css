@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1000px;
+  font-size: 0.8rem;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+table {
+  width: 100%;
+}
+
+table th {
+  font-weight: normal;
+}
+
+select {
+  -moz-appearance: menulist-button;
+  -webkit-appearance: menulist-button;
+  appearance: menulist-button;
+  outline: 1px solid #aaaaaa;
+}
+
+/**
+  ロゴ
+*/
+#header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+  height: 1.175rem;
+}
+
+#header h1 a {
+  display: block;
+  height: 100%;
+}
+
+#header h1 img {
+  height: 100%;
+}
+
+/**
+  ナビゲーションメニュー
+*/
+#header nav {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+#header ul {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#header ul li {
+  margin-right: 15px;
+  opacity: 0.7;
+}
+
+#header ul li:last-child {
+  margin-right: 0;
+}
+
+/**
+  コンテンツ
+*/
+#contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contents > * {
+  width: 47%;
+}
+
+.item-image img {
+  max-width: 100%;
+}
+
+#shopping {
+  padding-left: 10px;
+}
+
+#shopping h2 {
+  padding: 20px 0;
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #aaaaaa;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#shopping p {
+  margin-bottom: 30px;
+  line-height: 1.4rem;
+  font-size: 0.75rem;
+}
+
+#shopping p span {
+  vertical-align: super;
+  font-size: 0.6rem;
+}
+
+/**
+  テーブルフォーム
+*/
+form table tr {
+  border-bottom: 1px solid #aaaaaa;
+}
+
+form table tr:last-child {
+  border-bottom: none;
+}
+
+form table tr th,
+form table tr td {
+  padding: 15px 0;
+  width: 20%;
+  text-align: center;
+  border-right: 1px solid #aaaaaa;
+}
+
+form table tr th:last-child,
+form table tr td:last-child {
+  width: 60%;
+  border-right: none;
+}
+
+form table select {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: calc(100% - 20px);
+  font-size: 0.6rem;
+  text-align: left;
+}
+
+/* ボタン */
+button {
+  display: block;
+  margin-top: 20px;
+  padding: 15px 0;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  background-color: #202040;
+}
+
+/**
+  サイズ表
+*/
+.table-size {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.table-size th {
+  text-align: center;
+  background-color: #efefef;
+}
+
+.table-size tr {
+  border-top: 1px solid #aaaaaa;
+}
+
+.table-size tr:last-child {
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.table-size th:first-child,
+.table-size td:first-child {
+  width: 15%;
+}
+
+.table-size th,
+.table-size td {
+  padding: 15px 0;
+  width: 28%;
+  border-left: 1px solid #aaaaaa;
+}
+
+.table-size th:last-child,
+.table-size td:last-child {
+  border-right: 1px solid #aaaaaa;
+}
+
+/**
+  フッター
+*/
+#footer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 896px) {
+  .wrapper {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100% - 20px);
+  }
+
+  #header nav {
+    border-bottom: none;
+  }
+
+  #header ul {
+    margin-bottom: 0;
+  }
+
+  .nav-menu {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  #contents {
+    flex-direction: column;
+  }
+
+  #contents > * {
+    width: 100%;
+  }
+
+  .item-image img {
+    margin-left: -10px;
+    margin-bottom: 10px;
+    max-width: 100vw;
+    width: 100vw;
+  }
+}

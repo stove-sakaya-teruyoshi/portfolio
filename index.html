@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- <link rel="shortcut icon" href="/img/favicon.ico" /> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/loading.js"></script>
+    <script src="js/main.js"></script>
   </head>
   <body>
     <!-- ローディングアニメーション -->
@@ -46,12 +46,12 @@
     <!-- メインコンテンツ -->
     <div class="contents">
       <header id="header" class="wrapper">
-        <h1>ポートフォリオサイト</h1>
+        <h1>ポートフォリオ</h1>
         <nav>
           <ul>
             <li><a href="#create">制作物</a></li>
-            <li><a href="#profile">自己紹介</a></li>
-            <li><a href="#gallery">ギャラリー</a></li>
+            <!-- <li><a href="#profile">自己紹介</a></li>
+            <li><a href="#gallery">ギャラリー</a></li> -->
           </ul>
         </nav>
       </header>
@@ -61,25 +61,94 @@
             <img src="img/mainvisual.jpg" />
           </div> -->
           <section id="create">
-            <h2>制作物</h2>
-            <p>
-              <a href="timer/index.html"
-                ><img
-                  src="img/timer_sample.png"
-                /><br />JQueryを使ったタイマー</a
-              >
+            <!-- <h2>制作物</h2> -->
+            <p class="create-info">
+              左側のメニューからご覧になりたい制作物を選んでいただき、<br />右側に表示された画像をクリックすると別タブに制作物が表示されます。
             </p>
+            <div class="flex-create">
+              <ul class="chooser">
+                <li class="active">タイマーアプリ</li>
+                <li>プロフィールウェブページ</li>
+                <li>写真紹介ウェブページ１</li>
+                <li>写真紹介ウェブページ２</li>
+                <li>レシピ紹介ウェブページ１</li>
+                <li>レシピ紹介ウェブページ２</li>
+                <li>宝石店紹介ウェブページ</li>
+                <li>ランディングページ１</li>
+                <li>ランディングページ２</li>
+                <li>ストアページ</li>
+                <li>ECサイト風</li>
+              </ul>
+              <ul class="slider">
+                <li class="active">
+                  <a href="create/timer/index.html" target="blank"
+                    ><img src="img/timer_sample.png"
+                  /></a>
+                </li>
+                <li>
+                  <a href="create/profile/index.html" target="blank">
+                    <img src="img/plf_sample.png" />
+                  </a>
+                </li>
+                <li>
+                  <a href="create/photo/index.html" target="blank">
+                    <img src="img/pht_sample.png" />
+                  </a>
+                </li>
+                <li>
+                  <a href="create/photo2/index.html" target="blank">
+                    <img src="img/pht2_sample.png" />
+                  </a>
+                </li>
+                <li>
+                  <a href="create/recipe/index.html" target="blank">
+                    <img src="img/rcp_sample.png" />
+                  </a>
+                </li>
+                <li>
+                  <a href="create/recipe2/index.html" target="blank">
+                    <img src="img/rcp2_sample.png" />
+                  </a>
+                </li>
+                <li>
+                  <a href="create/jewelry/index.html" target="blank">
+                    <img src="img/jwl_sample.png" />
+                  </a>
+                </li>
+                <li>
+                  <a href="create/mywork/index.html" target="blank">
+                    <img src="img/myw_sample.png" />
+                  </a>
+                </li>
+                <li>
+                  <a href="create/lp/index.html" target="blank">
+                    <img src="img/lp_sample.png" />
+                  </a>
+                </li>
+                <li>
+                  <a href="create/store/index.html" target="blank">
+                    <img src="img/str_sample.png" />
+                  </a>
+                </li>
+                <li>
+                  <a href="create/ec/index.html" target="blank">
+                    <img src="img/ec_sample.png" />
+                  </a>
+                </li>
+              </ul>
+            </div>
           </section>
-          <section id="profile">
+          <!-- <section id="profile">
             <h2>自己紹介</h2>
           </section>
           <section id="gallery">
             <h2>ギャラリー</h2>
-          </section>
+          </section> -->
         </main>
-        <aside id="sidebar">
+        <!-- サイドバー -->
+        <!-- <aside id="sidebar">
           <div>
-            <!-- <img src="img/profile.png" /> -->
+            <img src="img/profile.png" />
             <h3>プロフィール</h3>
             <span>コーディング歴</span>
             <dl>
@@ -97,14 +166,14 @@
               <dd>1年</dd>
             </dl>
           </div>
-        </aside>
+        </aside> -->
       </div>
       <footer id="footer">
         <div class="wrapper">
           <ul>
             <li><a href="#create">制作物</a></li>
-            <li><a href="#profile">自己紹介</a></li>
-            <li><a href="#gallery">ギャラリー</a></li>
+            <!-- <li><a href="#profile">自己紹介</a></li>
+            <li><a href="#gallery">ギャラリー</a></li> -->
           </ul>
         </div>
       </footer>
