@@ -25,7 +25,7 @@ $(function(){
     canChange = false;
     $(".chooser li:nth-child(" + prev + ")").toggleClass("active");
     $(".chooser li:nth-child(" + next + ")").toggleClass("active");
-    $(".slider li:nth-child(" + prev + ")").fadeOut(1000);
+    $(".slider li:nth-child(" + prev + ")").fadeOut(800);
     $(".slider li:nth-child(" + next + ")").fadeIn(1000);
     setTimeout(function(){ canChange = true; }, 600);
   }

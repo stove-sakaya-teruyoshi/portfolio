@@ -68,6 +68,7 @@ body {
 
 #detail img {
   width: 45%;
+  height: 300px;
 }
 
 .detail-explain {
@@ -102,7 +103,7 @@ body {
   font-size: 0.9rem;
 }
 
-#detail a {
+#detail .show-store {
   display: block;
   margin-top: 30px;
   text-decoration: underline;
@@ -119,6 +120,7 @@ body {
 
   #detail img {
     width: 100%;
+    height: auto;
   }
 
   .detail-explain {

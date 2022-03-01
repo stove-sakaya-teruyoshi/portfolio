@@ -29,6 +29,7 @@ a:hover {
 #header h1,
 #header h1 a,
 #header h1 a img {
+  width: 100%;
   max-width: 200px;
 }
 
